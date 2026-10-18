@@ -1,0 +1,21 @@
+{
+  "name": "gennet-sms-sdk",
+  "version": "1.0.0",
+  "description": "GenNet Push SMS Gateway SDK",
+  "type": "module",
+  "main": "./dist/cjs/index.cjs",
+  "module": "./src/index.js",
+  "exports": {
+    "import": "./src/index.js",
+    "require": "./dist/cjs/index.cjs"
+  },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "",
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "ISC"
+}
