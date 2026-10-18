@@ -26,7 +26,7 @@ const sms = new GennetSMS({
 const [result] = await sms.sendSingle({
   msisdn: '88019XXXXXXXX',
   sms: 'Your verification code is 1234',
-  csmsId: 'ORDER-1001',                  // unique per day, your reference
+  csmsId: 'J2TQTTOU4D62H3HJMHYG',                  // 20 character  lenght unique string for each SMS there will be a reference ID from Client. The csms_id will be unique for the same day only
 });
 
 console.log(result.reference_id);        // GenNet reference ID — use it with getStatus()
